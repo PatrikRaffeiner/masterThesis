@@ -1,0 +1,5 @@
+# ignore DeepCFD_related folder
+DeepCFD_related/
+
+# ignore invalid folder
+invalid/
