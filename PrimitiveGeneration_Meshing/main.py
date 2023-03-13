@@ -21,14 +21,18 @@ if __name__ == '__main__':
     # generating ellipses
     ellipses_geom, img_stack_ellipses = create_primitive_stack("ellipse", domsize, domcenter, height_div=2,
                                                                width_div=2, angle_div=2)
+    
+    with open('ellipse.pkl', 'wb') as f:
+        # use pickle to serialize and save the NumPy array
+        pickle.dump(ellipses_geom[0], f)
 
-    edge_list, edge_img = edge_detection(img_stack_ellipses[0:1], domsize)
+    #edge_list, edge_img = edge_detection(img_stack_ellipses[0:1], domsize)
  
 
-    ordered_edge_list = region_growing(edge_img)
+    #ordered_edge_list = region_growing(edge_img)
 
 
-    meshing(ordered_edge_list, domsize)
+    #meshing(ordered_edge_list, domsize)
     
 
     '''
