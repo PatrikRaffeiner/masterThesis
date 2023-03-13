@@ -369,8 +369,8 @@ def create_flowRegionChannel(img_stack, domsize):
                 else:
                     px[...] = 0     # setting white pixels to object domain (=1)
 
-        img[0, :] = 2               # Upper domain side = upper wall
-        img[domsize[1] - 1, :] = 2  # lower domain side = lower wall
+        img[0, :] = 4               # Upper domain side = outlet
+        img[domsize[1] - 1, :] = 3  # lower domain side = inlet
         img[:, 0] = 3               # left domain side = inlet
         img[:, domsize[0] - 1] = 4  # right domain side = outlet
 

@@ -87,6 +87,15 @@ for xi in range(0,domsize[1]):
             i += 1
 
 
+# dump interpolated solution 
+with open('test_input_y.pkl', 'wb') as f:
+        # stacking the generated arrays and expanding them by a leading dimension
+        toDump = np.expand_dims(np.stack((Ux_ipol,Uy_ipol,p_ipol)), axis=0)
+        # use pickle to serialize and save the NumPy array
+        pickle.dump(toDump, f)
+
+print(toDump.shape)
+
 plt.subplot(221)
 plt.imshow(p_ipol.T, extent=(1,1920,1,1024), origin='lower')
 plt.title('p')
