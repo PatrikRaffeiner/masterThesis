@@ -94,8 +94,8 @@ with open('test_input_y.pkl', 'wb') as f:
         # use pickle to serialize and save the NumPy array
         pickle.dump(toDump, f)
 
-print(toDump.shape)
 
+'''
 plt.subplot(221)
 plt.imshow(p_ipol.T, extent=(1,1920,1,1024), origin='lower')
 plt.title('p')
@@ -106,3 +106,4 @@ plt.subplot(223)
 plt.imshow(Uy_ipol.T, extent=(1,1920,1,1024), origin='lower')
 plt.title('Uy')
 plt.show()
+'''
