@@ -17,7 +17,3 @@ Content:
 - Interpolation of of Ux, Uy, and p from an unstructured mesh into structured grid with recess of the primitive shape
 
 - Generation of data input "dataY" to match the 2st input of the DeepCFD network:
-	+ Ux
-	+ Uy
-	+ p
- 
