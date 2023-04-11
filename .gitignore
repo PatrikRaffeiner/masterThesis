@@ -3,3 +3,9 @@ DeepCFD_related/
 
 # ignore invalid folder
 invalid/
+
+# ignore pycache folder
+__pycache__/
+
+# ignore visual studio folders
+.vs/
