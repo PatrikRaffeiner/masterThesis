@@ -9,3 +9,14 @@ __pycache__/
 
 # ignore visual studio folders
 .vs/
+
+# ignore data folders
+Data/
+
+# ignoring all pikle files
+*.pkl
+
+# ignoring generation folders
+forComparison/NACA0012_Cgrid/
+forComparison/NACA0012_fromProcess/
+forComparison/NACA0012_ProcessBiggerGrid/
